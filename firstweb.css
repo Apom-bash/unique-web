@@ -1,0 +1,695 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 2s;
+    outline: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    max-width: 100vw;
+
+}
+
+html {
+    font-size: 60%;
+    scroll-behavior: smooth;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 7%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 35)0px 5px 15px;
+    z-index: 99;
+}
+
+.header #logo {
+    font-size: 3.5rem;
+    color: black;
+
+}
+
+.navbar a {
+    color: black;
+    font-size: 1.7rem;
+    margin-left: 1rem;
+}
+
+.navbar a:hover {
+    background-color: slategrey;
+    color: #fff;
+    border-radius: 10px;
+    padding: 1rem 3rem;
+}
+
+.icons div {
+    font-size: 2rem;
+    margin-left: 1rem;
+    color: #000;
+    cursor: pointer;
+
+}
+
+.icons :hover {
+    background-color: slategrey;
+    color: #fff;
+    border-radius: 10px;
+    padding: 1rem 3rem;
+}
+
+#menuBar {
+    display: none;
+}
+
+.search-box :active {
+    left: 40%;
+}
+
+.search-box {
+    position: absolute;
+    top: 21%;
+
+    width: 50%;
+    right: 2rem;
+    display:none ;
+}
+
+.search-box input {
+    padding: 1.5rem 2rem;
+    width: 100%;
+    border-radius: 15px;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 35)0px 7px 20px;
+}
+
+.shopping-cart :active {
+    left: 70%;
+}
+
+.shopping-cart {
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    width: 35rem;
+    right: 2rem;
+    left: 70%;
+    display:none ;
+}
+
+.shopping-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+}
+
+.shopping-box img {
+    width: 150px;
+}
+
+.fa-times {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    font-size: 2rem;
+}
+
+.shop-content h3 {
+    font-size: 1.7rem;
+    padding: .5rem;
+    color: black;
+}
+
+.shop-content span {
+    margin: .5rem;
+}
+
+.navbar :active {
+    left: 0;
+}
+
+.main-background {
+    background: url(/images/charming-curly-woman-white-blouse-smiles-sincerely-looks-front-poses-cozy-dressing-room.jpg);
+    background-blend-mode: vivid;
+    background-size: cover;
+    background-position: center;
+    margin-top: 6%;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.right-content {
+    position: absolute;
+    left: 13%;
+    top: 45%;
+}
+
+.right-content h1 {
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+.right-content p {
+    width: 30%;
+    font-size: 1.19rem;
+}
+
+.left-back {
+    flex: 1 1 45rem;
+}
+
+.images {
+
+    box-sizing: border-box;
+}
+
+.images h1 {
+    color: #000;
+    font-size: 7rem;
+    letter-spacing: 4px;
+    text-align: center;
+    margin: 7rem;
+}
+
+.img1 {
+    display: flex;
+    position: absolute;
+    left: 0.2rem;
+    flex-wrap: wrap;
+
+}
+
+.img2 {
+    width: 30%;
+    height: 40%;
+    object-fit: cover;
+    object-position: 1.2rem;
+    position: relative;
+    top: 6rem;
+    left: 2rem;
+    right: 2rem;
+
+}
+
+
+.img3 {
+    width: 35%;
+    height: 50%;
+    object-fit: cover;
+    object-position: 1.2rem;
+    position: relative;
+    top: 10rem;
+    left: 3rem;
+
+}
+
+.img4 {
+    width: 30%;
+    height: 35%;
+    object-fit: cover;
+    object-fit: 1.3rem;
+    position: relative;
+    left: 5rem;
+    right: 2rem;
+
+}
+
+.image2 {
+    position: relative;
+    top: 60rem;
+    left: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img5 {
+    width: 30%;
+    height: 50%;
+    object-fit: cover;
+    object-position: 0.2rem;
+    position: relative;
+    top: 1rem;
+    left: rem;
+
+}
+
+.img6 {
+    width: 36%;
+    height: 40%;
+    object-fit: cover;
+    object-position: 1.2rem;
+    position: relative;
+    top: 6rem;
+    left: 1.6rem;
+    right: 2rem;
+
+}
+
+.img7 {
+    width: 35%;
+    height: 80%;
+    object-fit: cover;
+    object-position: 1.2rem;
+    position: relative;
+    top: 0rem;
+    left: 1.5rem;
+
+}
+
+.image3 {
+    position: relative;
+    top: 63rem;
+    left: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img8 {
+    width: 29%;
+    height: 45%;
+    object-fit: cover;
+    object-position: 0.2rem;
+    position: relative;
+    top: -3rem;
+    left: 4rem;
+
+}
+
+.img9 {
+    width: 33%;
+    height: 40%;
+    object-fit: cover;
+    object-position: 1.2rem;
+    position: relative;
+    top: -2rem;
+    left: -1rem;
+
+
+}
+
+.img10 {
+    width: 27%;
+    height: 50%;
+    object-fit: cover;
+    object-position: 0.2rem;
+    position: relative;
+    top: -2rem;
+    left: 4.5rem;
+
+}
+
+.img101 {
+    width: 90vw;
+    height: 30vh;
+    object-fit: cover;
+    object-position: 0.2rem;
+    position: relative;
+    top: 40rem;
+    left: -34rem;
+    right: rem;
+
+}
+
+.image4 {
+    position: relative;
+    top: 65rem;
+    left: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img11 {
+    width: 30%;
+    height: 54%;
+    object-fit: cover;
+    object-position: 0.2rem;
+    position: relative;
+    top: -8rem;
+    left: rem;
+
+}
+
+.img12 {
+    width: 37%;
+    height: 50%;
+    object-fit: cover;
+    object-position: 0.2rem;
+    position: relative;
+    top: 0rem;
+    left: 3.5rem;
+
+}
+
+.img13 {
+    width: 27%;
+    height: 40%;
+    object-fit: cover;
+    object-position: 0.2rem;
+    position: relative;
+    top: -18rem;
+    left: 6rem;
+
+}
+section{
+    position: relative;
+    bottom: -67rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10rem;
+    transition: ease-in-out 2s;
+}
+section :hover{
+transform: scale(1.2);
+}
+.fas1{
+    width:20%;
+    background-color: black;
+    color:white;
+    padding: 3rem 2rem;
+    padding-bottom: 2rem;
+    border-radius:15px;
+    margin-left: 15rem;
+    box-shadow: slategrey 3px 3px;
+    opacity: inherit;
+   
+}
+
+   
+    
+.fas1 h3{
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 2rem 0rem 3rem;
+}
+.fas1 p{
+    font-size: 1.3rem;
+    background-color: #fff;
+    color: #000;
+    border-radius: 12px;
+    padding: 1rem;
+    font-weight: 300;
+
+}
+.fas2{
+    width:20%;
+    background-color: #fff;
+    color:#000;
+    padding: 3rem;
+    padding-bottom: 5rem;
+    border-radius:15px;
+    margin-right:;
+    margin-left;
+    box-shadow:slategrey 3px 3px 
+}
+.fas2 h3{
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 2rem 0rem 3rem;
+    color: #000;
+}
+.fas2 p{
+    font-size: 1.3rem;
+    padding: 1rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 12px;
+}
+.fas3{
+    width:20%;
+    background-color: #000;
+    color:white;
+    padding: 3rem;
+    padding-bottom: 2rem;
+    border-radius:15px;
+    margin-right: 15%;
+    box-shadow: slategrey 3px 3px;
+      
+}
+.fas3 h3{
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 2rem 0rem 3rem;
+
+}
+.fas3 p{
+    font-size: 1.3rem;
+    padding: 1rem;
+    background-color: #fff;
+    color: #000;
+    border-radius: 12px;
+}
+.thread{
+    align-items: flex-start;
+    margin-left: 2rem;
+    padding: 1rem;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    bottom: -70rem;
+}
+.thread li{
+    text-decoration: none;
+
+}
+.thread li:hover{
+    text-decoration: underline;
+}
+.thread h2{
+    font-size: 3rem;
+}
+.thread li a{
+    color: #000;
+    padding: 7rem 0;
+    padding-bottom: 4rem;
+    
+    font-size: 1.7rem;
+}
+.thread li a:hover{
+    color: red;
+}
+footer{
+    margin-top: rem;
+    position: relative;
+    bottom: -80rem;
+    background-color: #000;
+    padding: 5rem 2rem;
+    color: #fff;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.foot1{
+    width: 25%;
+    padding: 3rem;
+    font-size: 1.5rem;
+
+}
+.foot2{
+    width: 25%;
+    padding: 3rem;
+    font-size: 1.5rem;
+}
+.foot3{
+    width: 25%;
+    padding: 3rem;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px) {
+    .main-background{
+        width:100%
+    }
+    .header{
+        width: 100%;
+    }
+    .img1{
+        display:flex;
+        flex-direction: column;
+        margin: auto;
+        
+    }
+    .img4{
+        position: relative;
+        top: 4rem;
+        left: 10rem;
+        width: 500px;
+        
+    }
+    .img2{
+        position: relative;
+        top:0rem;
+        left: 10rem;
+        width:500px;
+
+    }
+    .img3{
+        position: relative;
+        top: 4rem;
+        left: 10rem;
+        width: 500px;
+    }
+    .image2{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 173rem;
+    }
+    .img5{
+        position: relative;
+        top:60rem; 
+        left: 9.1rem; 
+        width: 500px;;
+    
+
+    }
+    .img6{
+        display: none;
+    }
+    .image3{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top:180rem;
+    }
+    .img8{
+        
+        display: none;
+
+    }
+    .img9{
+        position: relative;
+        top:55rem;
+        left:10rem;
+        width: 500px;
+    
+    }
+    .img10{
+        display: none;
+    }
+    .img7{
+        
+        display: none;
+    }
+    .image4{
+        display: none;
+    }
+    
+    html {
+        font-size: 50%;
+
+    }
+
+    #menuBar {
+        display: inline-block;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 4rem;
+        width: 20rem;
+        display: flex;
+        height: 10%;
+        left: 0;
+        z-index: 15;
+        display: none;
+        flex-direction: column;
+    }
+    .navbar{
+        z-index: 10;
+        background-color: slategrey;
+    }
+
+    .navbar a {
+        display: block;
+        color: #fff;
+        background-color: #000;
+        margin: .5rem;
+        padding: 0.7rem;
+        border-radius: 15px;
+        ;
+
+    }
+    .fashion_tip{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        top: 230rem;
+    }
+    .fas1{
+        width: 50%;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        position: relative;
+        left: -7rem;
+    }
+    .fas2{
+        width: 50%;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        position: relative;
+        left: -4rem;
+    }
+    .fas3{
+        width: 50%;
+        margin:2rem 0rem;
+        font-size: 1.5rem;
+        font-weight: bolder;
+    }
+    footer{
+        position: absolute;
+        bottom: -560rem;
+    }
+   .thread{
+    position: relative;
+    top: 240rem;
+    left: 4rem;
+    font-size: 3rem;
+   } 
+}
